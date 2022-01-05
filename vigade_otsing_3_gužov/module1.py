@@ -52,6 +52,11 @@ def jagamine(loend,p,n,nol):
         
 
 def keskmine(loend):
+    """
+    Находит среднее значание в указаном списке
+    :param list loend:список чьё среднее значение надо найти
+    :rtype:float
+    """
     n=len(loend)
     if n==0:
         kesk=0
@@ -63,5 +68,10 @@ def keskmine(loend):
     return kesk
 
 def lisamine(loend,el):
+    """
+    Добавляет значения в список куда применина эта функция
+    :param list loend:список куда будет добвален/ы элементы
+    :param float el:то что будет добавлено в указаный список
+    """
     loend.append(el)
     loend.sort()
